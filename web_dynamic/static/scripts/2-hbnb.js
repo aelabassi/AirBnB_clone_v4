@@ -5,10 +5,10 @@ $(document).ready(() => {
             success: function (data) {
                 if (data.status === "OK") {
                     console.log(data.status);
-                    $('#api_status').addClass('available');
+                    $('DIV#api_status').addClass('available');
                 }
                 else{
-                    $('#api_status').removeClass('available');
+                    $('DIV#api_status').removeClass('available');
                 }
 
             }
