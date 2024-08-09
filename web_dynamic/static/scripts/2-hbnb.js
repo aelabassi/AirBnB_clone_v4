@@ -4,6 +4,7 @@ $(document).ready(() => {
             type: 'GET',
             success: function (data) {
                 if (data.status === 'OK') {
+                    console.log(data);
                     $('#api_status').addClass('available');
                 }
                 else{
