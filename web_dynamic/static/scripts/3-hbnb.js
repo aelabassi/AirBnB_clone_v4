@@ -12,7 +12,7 @@ $(document).ready(() => {
                             <div class="title_box">
                                 <h2>${place.name}</h2>
                                 <div class="price_by_night">
-                                    ${place.price_by_night}
+                                    $${place.price_by_night}
                                 </div>
                             </div>
                             <div class="information">
@@ -33,7 +33,7 @@ $(document).ready(() => {
                                 </div>
                             </div>
                              <div class="user">
-                                <b>Owner:</b> {{ place.user.first_name }} {{ place.user.last_name }}
+                                <b>Owner:</b> ${place.user.first_name } ${ place.user.last_name }
                             </div>
                             <div class="description">
                                 ${place.description}
