@@ -6,6 +6,7 @@ $(document).ready(() => {
                 if (data.status === "OK") {
                     console.log(data.status);
                     $('div#api_status').addClass('available');
+                    console.log("Class added ", $('div')[0].outerHTML);
                 }
                 else{
                     $('div#api_status').removeClass('available');
