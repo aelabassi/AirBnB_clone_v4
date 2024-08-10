@@ -32,6 +32,9 @@ $(document).ready(() => {
                                     ${place.number_bathrooms} Bathroom 
                                 </div>
                             </div>
+                             <div class="user">
+                                <b>Owner:</b> {{ place.user.first_name }} {{ place.user.last_name }}
+                            </div>
                             <div class="description">
                                 ${place.description}
                             </div>
