@@ -100,7 +100,6 @@ $(document).ready(() => {
     })
         */
 
-    $('input').change(() => {
 
     const amenities = {};
     $('input[type="checkbox"]').change(function () {
@@ -116,5 +115,3 @@ $(document).ready(() => {
         }
     });
 });
-
-})
