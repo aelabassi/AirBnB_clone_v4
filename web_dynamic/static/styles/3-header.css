@@ -9,6 +9,6 @@ header .logo {
     left: 20px;
     height: 100%;
 }
-.available{
+header .available{
     background-color: #ff545f !important;
 }
