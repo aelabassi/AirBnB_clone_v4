@@ -5,8 +5,8 @@ $(document).ready(() => {
             success: function (data) {
                 if (data.status === "OK") {
                     console.log(data.status);
-                    $('div#api_status').addClass('available');
-                    console.log("Class added ", $('div#api_status').attr('class'));
+                    $('#api_status').addClass('available');
+                    console.log("Class added ", $('#api_status').attr('class'));
                 }
                 else{
                     $('div#api_status').removeClass('available');
