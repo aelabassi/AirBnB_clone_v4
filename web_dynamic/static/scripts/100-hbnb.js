@@ -114,4 +114,35 @@ $(document).ready(() => {
             $('.amenities h4').html('&nbsp;');
         }
     });
+    // States and Cities
+    $(".popover input").change(function () {
+        const states = [];
+        const cities = [];
+        const names = [];
+        $(".popover input:checked").each(function () {
+            if ($(this).data("name") && $(this).data("id")) {
+                names.push($(this).data("name"));
+                if ($(this).data("id").startsWith("state")) {
+                    states.push($(this).data("id"));
+                } else if ($(this).data("id").startsWith("city")) {
+                    cities.push($(this).data("id"));
+                }
+            }
+        });
+        $(".popover input::unchecked").each(function (){
+            if ($(this).data("name") && $(this).data("id")) {
+                names.pop($(this).data("name"));
+                if ($(this).data("id").startsWith("state")) {
+                    states.pop($(this).data("id"));
+                } else if ($(this).data("id").startsWith("city")) {
+                    cities.pop($(this).data("id"));
+                }
+            }
+        })
+        if (names.length > 0) {
+            $(".locations h4").text(names.join(", "));
+        } else {
+            $(".locations h4").html("&nbsp;");
+        }
+    });
 });
